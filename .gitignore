@@ -1,0 +1,12 @@
+/.idea
+/.vscode
+/.php_cs.cache
+/.phpunit.result.cache
+/build/
+/node_modules
+/vendor/
+composer.lock
+composer.phar
+.env
+.env.backup
+.phpunit.xml.bak
