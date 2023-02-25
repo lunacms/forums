@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Tags;
 
-use Lunacms\Forums\Models\Tag;
+use Lunacms\Forums\Tags\Models\Tag;
 use Lunacms\Forums\Tests\TestCase;
 
 class TagDestroyTest extends TestCase

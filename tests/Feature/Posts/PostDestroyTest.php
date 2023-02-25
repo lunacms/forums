@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Posts;
 
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Posts\Models\Post;
 use Lunacms\Forums\Tests\TestCase;
 
 class PostDestroyTest extends TestCase

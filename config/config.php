@@ -27,10 +27,10 @@ return [
 	 */
 	'models' => [
 		'users' => \App\Models\User::class,
-        'forums' => \Lunacms\Forums\Models\Forum::class,
-        'comments' => \Lunacms\Forums\Models\Comment::class,
-        'posts' => \Lunacms\Forums\Models\Post::class,
-        'tags' => \Lunacms\Forums\Models\Tag::class,
+        'forums' => \Lunacms\Forums\Forums\Models\Forum::class,
+        'comments' => \Lunacms\Forums\Comments\Models\Comment::class,
+        'posts' => \Lunacms\Forums\Posts\Models\Post::class,
+        'tags' => \Lunacms\Forums\Tags\Models\Tag::class,
 	],
 
 	/**
@@ -76,10 +76,10 @@ return [
 	 */
 	'morph_map' => [
         'users' => \App\Models\User::class,
-        'forums' => \Lunacms\Forums\Models\Forum::class,
-        'forums_comments' => \Lunacms\Forums\Models\Comment::class,
-        'forums_post' => \Lunacms\Forums\Models\Post::class,
-        'forums_tags' => \Lunacms\Forums\Models\Tag::class,
+        'forums' => \Lunacms\Forums\Forums\Models\Forum::class,
+        'forums_comments' => \Lunacms\Forums\Comments\Models\Comment::class,
+        'forums_post' => \Lunacms\Forums\Posts\Models\Post::class,
+        'forums_tags' => \Lunacms\Forums\Tags\Models\Tag::class,
     ],
 
 	/**
@@ -90,10 +90,10 @@ return [
 	 */
 	'resources' => [
 		\App\Models\User::class => \Lunacms\Forums\Http\Users\Resources\UserResource::class,
-		\Lunacms\Forums\Models\Forum::class => \Lunacms\Forums\Http\Forums\Resources\ForumResource::class,
-		\Lunacms\Forums\Models\Tag::class => \Lunacms\Forums\Http\Tags\Resources\TagResource::class,
-		\Lunacms\Forums\Models\Post::class => \Lunacms\Forums\Http\Posts\Resources\PostResource::class,
-		\Lunacms\Forums\Models\Comment::class => \Lunacms\Forums\Http\Comments\Resources\CommentResource::class,
+		\Lunacms\Forums\Forums\Models\Forum::class => \Lunacms\Forums\Http\Forums\Resources\ForumResource::class,
+		\Lunacms\Forums\Tags\Models\Tag::class => \Lunacms\Forums\Http\Tags\Resources\TagResource::class,
+		\Lunacms\Forums\Posts\Models\Post::class => \Lunacms\Forums\Http\Posts\Resources\PostResource::class,
+		\Lunacms\Forums\Comments\Models\Comment::class => \Lunacms\Forums\Http\Comments\Resources\CommentResource::class,
 	],
 
 	/**
@@ -105,9 +105,9 @@ return [
 	 * 
 	 */
 	'policies' => [
-		\Lunacms\Forums\Models\Comment::class => \Lunacms\Forums\Http\Comments\Policies\CommentPolicy::class,
-		// \Lunacms\Forums\Models\Forum::class => \Lunacms\Forums\Http\Forums\Policies\ForumPolicy::class,
-		// \Lunacms\Forums\Models\Tag::class => \Lunacms\Forums\Http\Tags\Policies\TagPolicy::class,
-		// \Lunacms\Forums\Models\Post::class => \Lunacms\Forums\Http\Posts\Policies\PostPolicy::class,
+		\Lunacms\Forums\Comments\Models\Comment::class => \Lunacms\Forums\Http\Comments\Policies\CommentPolicy::class,
+		// \Lunacms\Forums\Forums\Models\Forum::class => \Lunacms\Forums\Http\Forums\Policies\ForumPolicy::class,
+		// \Lunacms\Forums\Tags\Models\Tag::class => \Lunacms\Forums\Http\Tags\Policies\TagPolicy::class,
+		// \Lunacms\Forums\Posts\Models\Post::class => \Lunacms\Forums\Http\Posts\Policies\PostPolicy::class,
 	],
 ];

@@ -4,7 +4,7 @@ namespace Lunacms\Forums\Models\Traits;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Lunacms\Forums\Models\Tag;
+use Lunacms\Forums\Tags\Models\Tag;
 
 /**
  * Entity can create and be associated with tags.
@@ -127,7 +127,7 @@ trait HasTagsTrait
     /**
      * Check and return an array of permission ids.
      *
-     * @param  int|array|\Lunacms\Forums\Models\Tag|\Illuminate\Support\Collection $tags
+     * @param  int|array|\Lunacms\Forums\Tags\Models\Tag|\Illuminate\Support\Collection $tags
      * @return array
      */
     protected function getWorkableTags($tags)

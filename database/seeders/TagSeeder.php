@@ -5,9 +5,9 @@ namespace Lunacms\Forums\Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Lunacms\Forums\Forums;
-use Lunacms\Forums\Models\Forum;
-use Lunacms\Forums\Models\Post;
-use Lunacms\Forums\Models\Tag;
+use Lunacms\Forums\Forums\Models\Forum;
+use Lunacms\Forums\Posts\Models\Post;
+use Lunacms\Forums\Tags\Models\Tag;
 
 class TagSeeder extends Seeder
 {

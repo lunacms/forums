@@ -57,7 +57,34 @@ Call `runInSingleMode()` in `boot` method of `AppServiceProvider`.
 Forums::runInSingleMode();
 ```
 
+### Model Repositories
+
+The package offers model repositories to enable interaction with the underlying API.
+
+Included repositories are:
+
+- `ForumRepository`: handles basic **forum** `CRUD` operations.
+- `PostRepository`: handles basic **post** `CRUD` operations.
+- `TagRepository`: handles basic **tag** `CRUD` operations.
+- `CommentRepository`: handles basic **comment** `CRUD` operations.
+
+Available methods:
+
+- `all()`:  Get all records for a given entity.
+- `find($id)`:  Find a record by given "id".
+- `findWhere($column, $value)`:  Find records by given "column" value.
+- `findWhereFirst($column, $value)`:  Find the first record with given "column" value.
+- `paginate($perPage = 10)`:  Paginate records for a given entity.
+- `create(array $data)`:  Create a record for a given entity.
+- `update($id, array $data)`:  Update a record of a given entity.
+- `delete($id)`:  Delete a record from an entity.
+- `withCriteria(...$criteria)`:  Refines a repository's query.
+
+> Repositories can be used if you need to interact more deeply with the API.
+
 ### Routes
+
+By default we have setup routes as the easiest way to use the package.
 
 **Note**: The enclosed `{CUSTOM_PREFIX}` is a prefix which can be changed in the `forums` config 
 `route` prefix.

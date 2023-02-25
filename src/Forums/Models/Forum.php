@@ -1,13 +1,16 @@
 <?php
 
-namespace Lunacms\Forums\Models;
+namespace Lunacms\Forums\Forums\Models;
 
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Lunacms\Forums\Comments\Models\Comment;
 use Lunacms\Forums\Database\Factories\ForumFactory;
 use Lunacms\Forums\Models\Traits\HasTagsTrait;
+use Lunacms\Forums\Posts\Models\Post;
+use Lunacms\Forums\Tags\Models\Tag;
 
 class Forum extends Model
 {

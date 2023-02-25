@@ -1,12 +1,14 @@
 <?php
 
-namespace Lunacms\Forums\Models;
+namespace Lunacms\Forums\Tags\Models;
 
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Lunacms\Forums\Database\Factories\TagFactory;
+use Lunacms\Forums\Forums\Models\Forum;
+use Lunacms\Forums\Posts\Models\Post;
 
 class Tag extends Model
 {

@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 use Lunacms\Forums\Http\Comments\Requests\CommentStoreRequest;
 use Lunacms\Forums\Http\Comments\Resources\CommentResource;
 use Lunacms\Forums\Http\Controllers\Controller;
-use Lunacms\Forums\Models\Comment;
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Comments\Models\Comment;
+use Lunacms\Forums\Posts\Models\Post;
 
 class PostCommentController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @param  \Lunacms\Forums\Models\Post  $post
+     * @param  \Lunacms\Forums\Posts\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function index(Post $post)
@@ -28,7 +28,7 @@ class PostCommentController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request|\Lunacms\Forums\Http\Comments\Requests\CommentStoreRequest  $request
-     * @param  \Lunacms\Forums\Models\Post  $post
+     * @param  \Lunacms\Forums\Posts\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function store(CommentStoreRequest $request, Post $post)
@@ -45,8 +45,8 @@ class PostCommentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Lunacms\Forums\Models\Post  $post
-     * @param  \Lunacms\Forums\Models\Comment  $comment
+     * @param  \Lunacms\Forums\Posts\Models\Post  $post
+     * @param  \Lunacms\Forums\Comments\Models\Comment  $comment
      * @return \Illuminate\Http\Response
      */
     public function show(Post $post, Comment $comment)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lunacms\Forums\Models;
+namespace Lunacms\Forums\Comments\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

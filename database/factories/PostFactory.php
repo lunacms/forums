@@ -3,11 +3,11 @@
 namespace Lunacms\Forums\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Lunacms\Forums\Models\Forum;
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Forums\Models\Forum;
+use Lunacms\Forums\Posts\Models\Post;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lunacms\Forums\Models\Post>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lunacms\Forums\Posts\Models\Post>
  */
 class PostFactory extends Factory
 {

@@ -5,9 +5,9 @@ namespace Lunacms\Forums\Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Lunacms\Forums\Forums;
-use Lunacms\Forums\Models\Comment;
-use Lunacms\Forums\Models\Forum;
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Comments\Models\Comment;
+use Lunacms\Forums\Forums\Models\Forum;
+use Lunacms\Forums\Posts\Models\Post;
 
 class ForumSeeder extends Seeder
 {

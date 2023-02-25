@@ -4,7 +4,7 @@ namespace Lunacms\Forums\Tests\Feature;
 
 use Lunacms\Forums\Database\Seeders\DatabaseSeeder;
 use Lunacms\Forums\Forums;
-use Lunacms\Forums\Models\Forum;
+use Lunacms\Forums\Forums\Models\Forum;
 use Lunacms\Forums\Tests\TestCase;
 
 /**

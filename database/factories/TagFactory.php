@@ -3,10 +3,10 @@
 namespace Lunacms\Forums\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Lunacms\Forums\Models\Tag;
+use Lunacms\Forums\Tags\Models\Tag;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lunacms\Forums\Models\Tag>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lunacms\Forums\Tags\Models\Tag>
  */
 class TagFactory extends Factory
 {

@@ -3,7 +3,7 @@
 namespace Lunacms\Forums\Http\Forums\Controllers;
 
 use Lunacms\Forums\Http\Controllers\Controller;
-use Lunacms\Forums\Models\Forum;
+use Lunacms\Forums\Forums\Models\Forum;
 use Lunacms\Forums\Http\Forums\Requests\ForumStoreRequest;
 use Lunacms\Forums\Http\Forums\Requests\ForumUpdateRequest;
 use Lunacms\Forums\Http\Forums\Resources\ForumResource;
@@ -59,7 +59,7 @@ class ForumController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Lunacms\Forums\Models\Forum  $forum
+     * @param  \Lunacms\Forums\Forums\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
     public function show(Forum $forum)
@@ -76,7 +76,7 @@ class ForumController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Lunacms\Forums\Http\Requests\ForumUpdateRequest  $request
-     * @param  \Lunacms\Forums\Models\Forum  $forum
+     * @param  \Lunacms\Forums\Forums\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
     public function update(ForumUpdateRequest $request, Forum $forum)
@@ -94,7 +94,7 @@ class ForumController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Lunacms\Forums\Models\Forum  $forum
+     * @param  \Lunacms\Forums\Forums\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
     public function destroy(Forum $forum)

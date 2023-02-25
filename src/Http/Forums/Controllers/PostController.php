@@ -3,8 +3,8 @@
 namespace Lunacms\Forums\Http\Forums\Controllers;
 
 use Lunacms\Forums\Http\Controllers\Controller;
-use Lunacms\Forums\Models\Forum;
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Forums\Models\Forum;
+use Lunacms\Forums\Posts\Models\Post;
 use Illuminate\Http\Request;
 use Lunacms\Forums\Http\Posts\Requests\PostStoreRequest;
 use Lunacms\Forums\Http\Posts\Resources\PostResource;
@@ -14,7 +14,7 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param  \Lunacms\Forums\Models\Forum  $forum
+     * @param  \Lunacms\Forums\Forums\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
     public function index(Forum $forum)
@@ -34,7 +34,7 @@ class PostController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request|\Lunacms\Forums\Http\Posts\Requests\PostStoreRequest  $request
-     * @param  \Lunacms\Forums\Models\Forum  $forum
+     * @param  \Lunacms\Forums\Forums\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
     public function store(PostStoreRequest $request, Forum $forum)
@@ -54,8 +54,8 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Lunacms\Forums\Models\Forum  $forum
-     * @param  \Lunacms\Forums\Models\Post  $post
+     * @param  \Lunacms\Forums\Forums\Models\Forum  $forum
+     * @param  \Lunacms\Forums\Posts\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function show(Forum $forum, Post $post)

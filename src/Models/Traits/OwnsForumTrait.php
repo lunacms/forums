@@ -2,7 +2,7 @@
 
 namespace Lunacms\Forums\Models\Traits;
 
-use Lunacms\Forums\Models\Forum;
+use Lunacms\Forums\Forums\Models\Forum;
 
 trait OwnsForumTrait
 {

@@ -2,10 +2,10 @@
 
 namespace Lunacms\Forums\Tests\Unit;
 
-use Lunacms\Forums\Models\Comment;
-use Lunacms\Forums\Models\Forum;
-use Lunacms\Forums\Models\Post;
-use Lunacms\Forums\Models\Tag;
+use Lunacms\Forums\Comments\Models\Comment;
+use Lunacms\Forums\Forums\Models\Forum;
+use Lunacms\Forums\Posts\Models\Post;
+use Lunacms\Forums\Tags\Models\Tag;
 use Lunacms\Forums\Tests\Models\User;
 use Lunacms\Forums\Tests\TestCase;
 

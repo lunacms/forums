@@ -1,13 +1,16 @@
 <?php
 
-namespace Lunacms\Forums\Models;
+namespace Lunacms\Forums\Posts\Models;
 
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Lunacms\Forums\Comments\Models\Comment;
 use Lunacms\Forums\Database\Factories\PostFactory;
 use Lunacms\Forums\Models\Traits\HasTagsTrait;
+use Lunacms\Forums\Forums\Models\Forum;
+use Lunacms\Forums\Tags\Models\Tag;
 
 class Post extends Model
 {
@@ -87,7 +90,7 @@ class Post extends Model
     }
 
     /**
-     * Get forum that post belongs to.
+     * Get forum that owns post.
      * 
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

@@ -6,7 +6,7 @@ use Lunacms\Forums\Http\Controllers\Controller;
 use Lunacms\Forums\Http\Tags\Requests\TagStoreRequest;
 use Lunacms\Forums\Http\Tags\Requests\TagUpdateRequest;
 use Lunacms\Forums\Http\Tags\Resources\TagResource;
-use Lunacms\Forums\Models\Tag;
+use Lunacms\Forums\Tags\Models\Tag;
 
 class TagController extends Controller
 {
@@ -53,7 +53,7 @@ class TagController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Lunacms\Forums\Models\Tag  $tag
+     * @param  \Lunacms\Forums\Tags\Models\Tag  $tag
      * @return \Illuminate\Http\Response
      */
     public function show(Tag $tag)
@@ -65,7 +65,7 @@ class TagController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request|\Lunacms\Forums\Http\Tags\Requests\TagUpdateRequest  $request
-     * @param  \Lunacms\Forums\Models\Tag  $tag
+     * @param  \Lunacms\Forums\Tags\Models\Tag  $tag
      * @return \Illuminate\Http\Response
      */
     public function update(TagUpdateRequest $request, Tag $tag)
@@ -79,7 +79,7 @@ class TagController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Lunacms\Forums\Models\Tag  $tag
+     * @param  \Lunacms\Forums\Tags\Models\Tag  $tag
      * @return \Illuminate\Http\Response
      */
     public function destroy(Tag $tag)

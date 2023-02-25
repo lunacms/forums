@@ -3,10 +3,10 @@
 namespace Lunacms\Forums\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Lunacms\Forums\Models\Comment;
+use Lunacms\Forums\Comments\Models\Comment;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lunacms\Forums\Models\Comment>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lunacms\Forums\Comments\Models\Comment>
  */
 class CommentFactory extends Factory
 {

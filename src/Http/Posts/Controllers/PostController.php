@@ -7,7 +7,7 @@ use Lunacms\Forums\Http\Controllers\Controller;
 use Lunacms\Forums\Http\Posts\Requests\PostStoreRequest;
 use Lunacms\Forums\Http\Posts\Requests\PostUpdateRequest;
 use Lunacms\Forums\Http\Posts\Resources\PostResource;
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Posts\Models\Post;
 
 class PostController extends Controller
 {
@@ -75,7 +75,7 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Lunacms\Forums\Models\Post  $post
+     * @param  \Lunacms\Forums\Posts\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function show(Post $post)
@@ -92,7 +92,7 @@ class PostController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request|\Lunacms\Forums\Http\Posts\Requests\PostUpdateRequest  $request
-     * @param  \Lunacms\Forums\Models\Post  $post
+     * @param  \Lunacms\Forums\Posts\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function update(PostUpdateRequest $request, Post $post)
@@ -117,7 +117,7 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Lunacms\Forums\Models\Post  $post
+     * @param  \Lunacms\Forums\Posts\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function destroy(Post $post)

@@ -4,7 +4,7 @@ namespace Lunacms\Forums\Http\Comments\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
-use Lunacms\Forums\Models\Comment;
+use Lunacms\Forums\Comments\Models\Comment;
 
 class CommentPolicy
 {
@@ -14,7 +14,7 @@ class CommentPolicy
      * Determine if the given comment can be replied to by the user.
      *
      * @param  \Illuminate\Database\Eloquent\Model  $user
-     * @param  \Lunacms\Forums\Models\Comment  $comment
+     * @param  \Lunacms\Forums\Comments\Models\Comment  $comment
      * @param  \Illuminate\Database\Eloquent\Model|null  $owner
      * @return \Illuminate\Auth\Access\Response
      */    
@@ -27,7 +27,7 @@ class CommentPolicy
 	 * Determine if the given comment can be updated by the user.
 	 *
 	 * @param  \Illuminate\Database\Eloquent\Model  $user
-	 * @param  \Lunacms\Forums\Models\Comment  $comment
+	 * @param  \Lunacms\Forums\Comments\Models\Comment  $comment
 	 * @param  \Illuminate\Database\Eloquent\Model|null  $owner
 	 * @return \Illuminate\Auth\Access\Response
 	 */    
@@ -42,7 +42,7 @@ class CommentPolicy
 	 * Determine if the given comment can be updated by the user.
 	 *
 	 * @param  \Illuminate\Database\Eloquent\Model  $user
-	 * @param  \Lunacms\Forums\Models\Comment  $comment
+	 * @param  \Lunacms\Forums\Comments\Models\Comment  $comment
 	 * @param  \Illuminate\Database\Eloquent\Model|null  $owner
 	 * @return \Illuminate\Auth\Access\Response
 	 */    
@@ -56,7 +56,7 @@ class CommentPolicy
     /**
      * Determine if user or entity owns a comment.
      * 
-     * @param  \Lunacms\Forums\Models\Comment $comment
+     * @param  \Lunacms\Forums\Comments\Models\Comment $comment
      * @param  \Illuminate\Database\Eloquent\Model|null  $owner
      * @return \Illuminate\Auth\Access\Response
      */

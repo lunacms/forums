@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Forums;
 
-use Lunacms\Forums\Models\Forum;
+use Lunacms\Forums\Forums\Models\Forum;
 use Lunacms\Forums\Tests\TestCase;
 
 class ForumShowTest extends TestCase

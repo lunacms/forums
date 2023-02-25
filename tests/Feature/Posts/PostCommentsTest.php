@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Posts;
 
-use Lunacms\Forums\Models\Comment;
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Comments\Models\Comment;
+use Lunacms\Forums\Posts\Models\Post;
 use Lunacms\Forums\Tests\Models\User;
 use Lunacms\Forums\Tests\TestCase;
 

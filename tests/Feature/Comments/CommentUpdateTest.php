@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Comments;
 
-use Lunacms\Forums\Models\Comment;
-use Lunacms\Forums\Models\Post;
+use Lunacms\Forums\Comments\Models\Comment;
+use Lunacms\Forums\Posts\Models\Post;
 use Lunacms\Forums\Tests\TestCase;
 
 class CommentUpdateTest extends TestCase

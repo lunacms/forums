@@ -2,7 +2,7 @@
 
 namespace Lunacms\Forums\Models\Traits;
 
-use Lunacms\Forums\Models\Comment;
+use Lunacms\Forums\Comments\Models\Comment;
 
 /**
  * Handles comment operations for model.
